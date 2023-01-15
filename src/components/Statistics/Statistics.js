@@ -18,7 +18,7 @@ import {
         <li>neutral:{neutral}</li>
         <li>bad:{bad}</li>
         <li>Total:{total}</li>
-        <li>{good === 0 ? '0' : positivePercentage} %</li>
+        <li>Positive feedback:{good === 0 ? '0' : positivePercentage} %</li>
       </StatisticsList>
     </>
   );
