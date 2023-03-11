@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
+import { Title } from '../FeedbackOptions/Feedback.styled';
 
-import { Title } from "components/Feedback/Feedback.style";
 
-export const Section = ({ title, children }) => (
-    <Title>
-      <div>{title}</div>
-      {children}
-    </Title>
-  );
+export const Section = ({title, children}) =>{
+    return(
+        <Title>
+        <div>{title}</div>
+        {children}
+        </Title>
+    )
+};
 
-  Section.propTypes = {
+Section.propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.object.isRequired,
-  }
+    children: PropTypes.object.isRequired
+}
